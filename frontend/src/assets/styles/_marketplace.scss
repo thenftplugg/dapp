@@ -1,0 +1,33 @@
+.bg-marketplace {
+  background-image: linear-gradient(
+    319deg, #663dff15 0%, #aa00ff15 37%, #cc449915 100%);
+}
+
+.slide_preview {
+    padding-top: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    background: linear-gradient(
+      196.94deg, rgba(0, 0, 0, 0.027) 42.78%, rgba(0, 0, 0, 0.301) 88.32%
+    ) center center / cover, var(--nft-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.slide_preview:hover {
+  transform: scale(1.2);
+}
+
+.slide_wrapper .h1, .slide_wrapper .h6 {
+  position: absolute;
+  margin-top: 10px;
+  padding-left: 15px;
+  z-index: 99;
+}
+
+.slide_wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}

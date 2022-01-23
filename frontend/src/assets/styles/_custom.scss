@@ -1,0 +1,246 @@
+.maintenance {
+  h1 { font-size: 50px; }
+  body { font: 20px Helvetica, sans-serif; color: #333; }
+  article { display: block; text-align: left; width: 650px; margin: 0 auto; padding-top: 100px; }
+  a { color: #dc8100; text-decoration: none; }
+  a:hover { color: #333; text-decoration: none; }
+}
+
+.project-card {
+  width: 350px !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.border-white-dashed {
+  border: 3px dashed #191c24;
+}
+
+.hide {
+  display: none;
+}
+
+.show_on_hover:hover + .hide {
+  display: block;
+}
+
+.page-body-wrapper {
+  display: block;
+}
+
+.main-panel {
+  min-height: calc(100vh);
+}
+
+.project-list-showcase .project-grid .project-grid-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.project-list-showcase .project-grid .img-holder {
+  border-radius: 4px 4px 0 0;
+  height: 350px;
+  width: 350px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  img {
+    width: 350px;
+  }
+}
+
+.project-grid {
+  width: 350px;
+}
+
+#start-generation {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.right-sidebar {
+  background-color: #191c24;
+  height: 100vh;
+  overflow: auto;
+  width: 500px;
+}
+
+.main-editor {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  #start-generation {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+  }
+}
+
+.color-panel {
+  height: auto;
+  display: flex;
+  align-content: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  width: 68px;
+
+  .color {
+    border: 1px solid white;
+    outline: 1px solid rgb(180, 180, 180);
+    box-sizing: border-box;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    transition: transform 0.2s;
+
+    &:hover {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+  }
+}
+
+@media (max-width: 762px) {
+  .color-panel {
+    width: 100% !important;
+  }
+}
+
+.color-selected {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  border: 1px solid white;
+  outline: 1px solid rgb(180, 180, 180);
+}
+
+#post-message {
+  height: inherit;
+}
+.reply-message {
+  height: inherit !important;
+}
+
+textarea, input {
+  color: #fff !important;
+}
+
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#pixel-updates {
+  width: 200px;
+  h4 {
+    height: 60px;
+    margin: 0;
+  }
+  .card {
+    overflow-y: auto;
+    height: calc(100% - 60px);
+  }
+}
+
+#community {
+  font-family: 'prstartk' !important;
+}
+
+#canvas-image {
+  display:inline-block;
+  position: relative; 
+
+  img {
+    position: absolute;
+    z-index:1;
+  }
+
+  canvas {
+    position: relative;
+    z-index: 20;
+  }
+}
+
+.nav-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .nav-bottom {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.top-rounded {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.asset-image {
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+
+  .text-shadow {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    height: 25%;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.layer-item-hover {
+  display: none;
+}
+
+.layer-item:hover .layer-item-hover {
+  display: inline;
+}
+
+.unstyled {
+  margin: 0 !important;
+}
+.max-height-400 {
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.nav-with-generation {
+  overflow: auto !important;
+  max-height: calc(100vh - var(--generate-height, 0px));
+}
+
+@media screen and (max-width: 990px) {
+  .nav-with-generation {
+    overflow: auto !important;
+    max-height: calc(100vh - var(--generate-height, 0px) - 73px);
+  }
+}
+
+button.call-to-action {
+  font-size: 1.2em !important;
+}
+.subtext {
+  line-height: 2em;
+}
+.rounded-2 {
+  border-radius: 2em;
+}

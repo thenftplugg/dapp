@@ -1,0 +1,1 @@
+export const maintenance = process.env.MAINTENANCE_MODE;
